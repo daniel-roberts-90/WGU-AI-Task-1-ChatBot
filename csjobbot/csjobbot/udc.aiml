@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Hi there! I am csjobbot. I am designed to help students discover careers in the technology field. Would you like help discovering technology careers?
+      <button>
+        <text>Yes</text>
+        <postback>CHOICE</postback>
+      </button>
+      <button>
+        <text>No</text>
+        <postback>Not Interested</postback>
+      </button>
+    </template>
+  </category>
+  
+  <category>
+      <pattern> Not Interested</pattern>
+      <template> I apologize that I can not help you today. If you change your mind, click yes. </template>
+  </category>
+  
+  <category>
+      <pattern>CHOICE</pattern>
+      <template> You can choose to see 5 technology careers or answer a series of questions to see what profession may suit you best.
+        <button>
+            <text>See 5 top Careers in the Technology Field</text>
+            <postback>5 Careers in the Technology Field</postback>
+        </button>
+        <button>
+          <text>Answer questions to see which profession may suit your needs.</text>
+          <postback>QUESTIONS</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>5 Careers in the Technology Field</pattern>
+      <template> Below are 5 technology-related professions. You can click each one to be directed to third-party articles detailing each profession.
+          <button>
+              <text>Software Developer</text>
+              <postback>SOFTWARE</postback>
+          </button>
+          <button>
+              <text>Web Developer</text>
+              <postback>WEB</postback>
+          </button>
+          <button>
+              <text>Computer Support Specialist</text>
+              <postback>COMPUTER</postback>
+          </button>
+          <button>
+              <text>Database Administrator</text>
+              <postback>DATA</postback>
+          </button>
+          <button>
+              <text>IT Project Manager</text>
+              <postback>PROJECTS</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>SOFTWARE</pattern>
+      <template> Click the link to read an article about this profession.
+          <button>
+              <text>12 Software Developer Skills to Learn</text>
+              <url>https://www.indeed.com/career-advice/career-development/software-developer-skills</url>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>WEB</pattern>
+      <template> Click the link to read an article about this profession. 
+      <button>
+          <text>Top Web Developer Skills You Must Have</text>
+          <url>https://www.interviewbit.com/blog/web-developer-skills/</url>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>COMPUTER</pattern>
+      <template>Click the link to read an article about this profession.
+          <button>
+              <text>Examples of Computer User Support Specialist Skills</text>
+              <url>https://www.indeed.com/career-advice/resumes-cover-letters/computer-user-support-specialist-skills</url>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>DATA</pattern>
+      <template>Click the link to read an article about this profession.
+          <button>
+              <text>Database Administrator</text>
+              <url>https://www.computerscience.org/careers/database-administrator/</url>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>PROJECTS</pattern>
+      <template>Click the link to read an article about this profession.
+          <button>
+              <text>10 Skills Every IT Project Manager Needs in 2022</text>
+              <url>https://www.comptia.org/blog/skills-every-it-project-manager-needs</url>
+          </button>
+      </template>
+  </category>
+  
+    <category>
+      <pattern>QUESTIONS</pattern>
+      <template> Do you prefer more or less customer interaction with a job?
+          <button>
+              <text>MORE</text>
+              <postback>MORE</postback>
+          </button>
+          <button>
+              <text>LESS</text>
+              <postback>LESS</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>MORE</pattern>
+      <template> Would you prefer to work managing projects or working with hardware and software?
+      <button>
+          <text>Managing Projects</text>
+          <postback>PROJECT MANAGEMENT</postback>
+      </button>
+      <button>
+          <text>Hardware and Software</text>
+          <postback>HARDWARE AND SOFTWARE</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>PROJECT MANAGEMENT</pattern>
+      <template> IT Project Management may be a great option for you! Click to learn more about a profession in IT Project Management.
+      <button>
+          <text>10 Skills Every IT Project Manager Needs in 2022</text>
+          <url>https://www.comptia.org/blog/skills-every-it-project-manager-needs</url>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>HARDWARE AND SOFTWARE</pattern>
+      <template>Computer Support Specialist may be a great option for you! Click to learn more about a profession in Computer Support.
+      <button>
+          <text>Examples of Computer User Support Specialist Skills</text>
+          <url>https://www.indeed.com/career-advice/resumes-cover-letters/computer-user-support-specialist-skills</url>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>LESS</pattern>
+      <template> Would you prefer creating software, working with data and information, or building and creating websites?
+      <button>
+          <text>Creating Software</text>
+          <postback>CREATING SOFTWARE</postback>
+      </button>
+      <button>
+          <text>Working with Data and Information</text>
+          <postback>WORKING WITH DATA AND INFORMATION</postback>
+      </button>
+      <button>
+          <text>Building and Creating Websites</text>
+          <postback>BUILDING AND CREATING WEBSITES</postback>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>CREATING SOFTWARE</pattern>
+      <template>Software Developer may be a perfect fit for you! Click to learn more about developing software.
+      <button>
+          <text>12 Software Developer Skills to Learn</text>
+          <url>https://www.indeed.com/career-advice/career-development/software-developer-skills</url>
+      </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>WORKING WITH DATA AND INFORMATION</pattern>
+      <template>A database administrator may be the perfect job for you! Click to learn more about maintaining databases.
+          <button>
+              <text>Database Administrator</text>
+              <url>https://www.computerscience.org/careers/database-administrator/</url>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>BUILDING AND CREATING WEBSITES</pattern>
+      <template>A web developer may be the perfect job for you! Click to learn more about developing websites.
+      <button>
+          <text>Top Web Developer Skills You Must Have</text>
+          <url>https://www.interviewbit.com/blog/web-developer-skills/</url>
+      </button>
+          
+      </template>
+  </category>
+  
+  <category>
+      <pattern>Exit</pattern>
+      <template>Thank you for interacting with csjobbot! We hope to see you again.
+      </template>
+  </category>
+  
+  <category>
+      <pattern>Cancel</pattern>
+      <template><srai>Exit</srai></template>
+  </category>
+  
+  <category>
+      <pattern>Stop</pattern>
+      <template><srai>Exit</srai></template>
+  </category>
+  
+  <category>
+      <pattern>Quit</pattern>
+      <template><srai>Exit</srai></template>
+  </category>
+  
+  
+  
+</aiml>
+
+
